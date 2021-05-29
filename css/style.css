@@ -85,6 +85,7 @@ li {
   /* padding-top: 24px;
   padding-bottom: 25px; */
   border-bottom: 1px solid var(--border-color);
+  /* position: fixed; */
 }
 
 .link-logo {
@@ -649,6 +650,8 @@ address {
   height: 100%;
   background-color: var(--backdrop-color);
   z-index: 100;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   position: absolute;
@@ -660,5 +663,25 @@ address {
   background: var(--hero-color);
   box-shadow: var(--modal-color);
   border-radius: 4px;
+}
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.modal-x {
+  width: 11px;
+  height: 11px;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 /* ========== END MODAL WINDOW ========== */
