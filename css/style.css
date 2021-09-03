@@ -637,6 +637,7 @@ address {
 }
 .portfolio-link-item {
   text-decoration: none;
+  position: relative;
 }
 .portfolio-link-item:hover,
 .portfolio-link-item:focus {
